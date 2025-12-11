@@ -1,26 +1,47 @@
-# AI Usage Report
+# AI Usage Report – Assignment 4 Portfolio  
+**Student Name:** Zahra  
+**Course:** SWE363 – Web Engineering  
+**Project:** Personal Portfolio Website  
 
-## Tools Used
-- ChatGPT (OpenAI)
+---
 
-## How AI Helped
-I used ChatGPT to:
-- Explain the assignment requirements in simple language.
-- Propose a feature set that satisfies the advanced functionality, API integration, and state management requirements.
-- Generate initial versions of:
-  - `index.html`
-  - `css/styles.css`
-  - `js/script.js`
-  - `docs/technical-documentation.md`
-  - `README.md`
+## 1. Purpose of Using AI  
+AI tools (specifically ChatGPT) were used to support the development of the portfolio by helping with:  
+- Debugging JavaScript errors.  
+- Improving UI/UX ideas and color theme suggestions.  
+- Writing clean explanations for documentation sections.  
+- Generating structure for modal components and GitHub API fetch logic.  
 
-## My Edits and Review
-- I reviewed the generated code to understand each section (API calls, event listeners, validation, localStorage usage).
-- I can change the GitHub username in the API URL to my own.
-- I can customize the styles to match my personal portfolio theme.
+AI was not used to generate complete files automatically.  
+All final coding, structure, styling, and logic were manually verified, edited, and integrated by me.
 
-## What I Learned
-- How to use `fetch()` to call the GitHub REST API and handle JSON responses.
-- How to store and read data from `localStorage` for theme and user name.
-- How to add basic client-side form validation using JavaScript.
-- How to structure a small front-end project with HTML, CSS, JS, and documentation files.
+---
+
+## 2. Specific Interactions  
+Here are examples of tasks supported by AI:  
+- Fixing EmailJS validation and status message errors.  
+- Helping implement dark/light theme toggling.  
+- Assisting with modal UI responsiveness.  
+- Suggesting improvements for the demo presentation and script.  
+
+---
+
+## 3. Student Verification  
+All AI-generated parts were reviewed, modified, and integrated manually.  
+The student confirms that they understand all code used and can explain every feature including:  
+- GitHub REST API usage  
+- EmailJS integration  
+- DOM manipulation logic  
+- CSS theming system
+
+---
+
+## 4. Ethical & Academic Considerations  
+AI assistance followed KFUPM guidelines:  
+- AI was used as a helper, not as a code generator for full solutions.  
+- The final implementation reflects my own work and understanding.
+
+---
+
+## **Conclusion**  
+AI assisted in brainstorming, debugging, and documentation, but the portfolio's implementation, design, and logic were built and finalized by me.
