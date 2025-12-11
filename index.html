@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Zahra Portfolio – Assignment 4</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header>
+    <h1>Zahra’s Portfolio</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section id="hero">
+      <h2 id="greeting">Welcome!</h2>
+      <label>
+        Your name:
+        <input type="text" id="name-input" placeholder="Type your name" />
+      </label>
+    </section>
+
+    <!-- =========================
+         ABOUT ME
+    ========================== -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Zahra, a Computer Science student passionate about building
+        clean, modern web applications using HTML, CSS, JavaScript, and AI tools.
+      </p>
+    </section>
+
+    <!-- =========================
+         SKILLS SECTION
+    ========================== -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML & Semantic Structure</li>
+        <li>CSS & Responsive Layouts</li>
+        <li>JavaScript & DOM</li>
+        <li>Git & GitHub</li>
+        <li>API Integration</li>
+        <li>AI-assisted Development</li>
+      </ul>
+    </section>
+
+    <!-- =========================
+         FEATURED PROJECTS
+    ========================== -->
+    <section id="my-projects">
+      <h2>Featured Projects</h2>
+
+      <div class="project-cards">
+
+        <div class="card">
+          <h3>HASEEB Dashboard</h3>
+          <p>A financial advisor–owner dashboard with simulations and a full MERN backend.</p>
+          <a href="https://haseeb-ten.vercel.app/" target="_blank">Visit HASEEB</a>
+        </div>
+
+        <div class="card">
+          <h3>FPGA Reaction-Time Tester</h3>
+          <p>
+            A Verilog-based system on the Nexys A7 board that measures button reaction time.
+          </p>
+          <a href="#" class="details-link" onclick="openReactionModal()">View Details</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         GITHUB PROJECTS API
+    ========================== -->
+    <section id="projects">
+      <h2>Latest GitHub Repositories</h2>
+
+      <div class="controls">
+        <button data-filter="all">All</button>
+        <button data-filter="school">School</button>
+        <button data-filter="personal">Personal</button>
+
+        <select id="sort-select">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </div>
+
+      <div id="projects-list"></div>
+      <p id="projects-error" class="error hidden"></p>
+    </section>
+
+    <!-- =========================
+         CONTACT FORM
+    ========================== -->
+   <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form id="contact-form">
+        <label>
+          Email
+          <input type="email" id="email" name="from_email" required />
+          <span class="error" id="email-error"></span>
+        </label>
+
+        <label>
+          Message
+          <textarea id="message" name="message" required></textarea>
+          <span class="error" id="message-error"></span>
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p id="status-msg"></p>
+    </section>
+
+    
+
+  </main>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- =========================
+       FPGA MODAL
+  ========================== -->
+  <div id="reaction-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" onclick="closeReactionModal()">&times;</span>
+        <h2>FPGA Reaction-Time Tester – Details</h2>
+
+        <div class="modal-images">
+
+          <div class="modal-item">
+            <img src="assets/images/good.jpeg" alt="GOOD result">
+            <p><strong>GOOD:</strong> Excellent reaction time within the optimal range.</p>
+          </div>
+
+          <div class="modal-item">
+            <img src="assets/images/slow.jpeg" alt="SLOW result">
+            <p><strong>SLOW:</strong> The user reacted slower than expected.</p>
+          </div>
+
+          <div class="modal-item">
+            <img src="assets/images/fast.jpeg" alt="FAST result">
+            <p><strong>FAST:</strong> Button pressed before the signal appeared.</p>
+          </div>
+
+          <div class="modal-item">
+            <img src="assets/images/error.jpeg" alt="ERROR result">
+            <p><strong>ERROR:</strong> Invalid timing or unexpected input.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
